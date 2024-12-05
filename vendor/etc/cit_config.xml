@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<parameter>
+  <item name="Config">
+    <!--value = 0x80000 + 7001-->
+    <param key="QCRIL_OEM_HOOK_REQID" value="531290"/>
+    <param key="SupportFingerprintCAL"    value="true"/>
+    <param key="SupportSingleSIM"    value="true"/>
+    <param key="SupportUnderScreenFingerprint" value="true"/>
+    <param key="SupportPowerKey"    value="true"/>
+  </item>
+  <item name="LightSensor">
+    <param key="BackLightFile" value="/sys/class/backlight/panel0-backlight/brightness"/>
+    <param key="SupportVirtualLight"    value="false"/>
+  </item>
+  <item name="Camera">
+    <param key="TwinCameraType" value="switch"/>
+    <param key="frontCameraPixel" value="false"/>
+  </item>
+  <item name="Charge">
+    <param key="SupportCurrent" value="false"/>
+    <param key="SupportFastCharge" value="false"/>
+    <param key="BatteryInfo" value="true"/>
+    <param key="battery_low" value="20"/>
+    <param key="battery_high" value="70"/>
+  </item>
+  <item name="Config">
+    <param key="ConnectorType" value="Type-C"/>
+  </item>
+  <item name="FPSelf">
+    <param key="SelfTestName_Goodix" value="com.goodix.fingerprint.setting.CITTestActivity"/>
+    <param key="CheckTestName_Goodix" value="com.goodix.fingerprint.setting.CITTestActivity"/>
+    <param key="TestName_Fpc" value="com.fingerprints.optical.testtool.sensortest.SensorTestActivity"/>
+    <param key="PAKName_Goodix" value="com.goodix.fingerprint.setting"/>
+    <param key="PAKName_Fpc" value="com.fingerprints.optical"/>
+    <param key="GoodixCalibrateFile" value="true"/>
+    <param key="FPCCalibrateFile" value="autoCIT"/>
+  </item>
+  <item name="SecretCode">
+    <param key="WifiLogVer" value="V2"/>
+    <param key ="DiagMode" value="diag,adb"/>
+  </item>
+  <item name="LED">
+    <param key="hasBacklight" value="true"/>
+    <param key="hasWhiteLED" value="false"/>
+    <param key="hasRedLED" value="false"/>
+    <param key="hasGreenLED" value="false"/>
+    <param key="hasBlueLED" value="false"/>
+    <param key="hasBackTorch" value="true"/>
+    <param key="hasBackTorch2" value="false"/>
+    <param key="hasFrontTorch1" value="false"/>
+    <param key="hasBackTorch1_2" value="false"/>
+    <param key="hasKeyLED" value="false"/>
+    <param key="BackTorchFile1" value="/sys/class/leds/flashlight-back/brightness"/>
+  </item>
+  <item name="SAR_SENSOR">
+    <param key="SarFactoryEnable" value="false"/>
+  </item>
+  <item name="SoftVersion">
+    <param key="isShowIFAA_FIDO_Widevine_Keybox" value="true"/>
+    <param key="isShowPaInformation" value="true"/>
+  </item>
+   <item name="FM">
+     <param key="isShowFm" value="false"/>
+   </item>
+  <item name="Battery">
+     <param key="isShowBatteryForAuthentic" value="false"/>
+     <param key="showBatteryInfo" value="true"/>
+   </item>
+   <item name="Motor">
+     <param key="isManualPass" value="false"/>
+   </item>
+
+  <item name="SarsensorDiff">
+    <param key="N7_sar_test" value="true"/>
+    <param key="isSupportSarSensorTool" value="true"/>
+    <param key="main_cap_low" value="0"/>
+    <param key="main_cap_high" value="30"/>
+    <param key="sub_cap_low" value="60"/>
+    <param key="sub_cap_high" value="90"/>
+    <param key="max_low" value="2050"/>
+    <param key="max_high" value="3250"/>
+    <param key="C1_max_low" value="1900"/>
+    <param key="C1_max_high" value="3100"/>
+  </item>
+
+  <item name="CameraTest">
+    <param key="Jigan_Calibration" value="true"/>
+  </item>
+
+  <item name="CPRamdump">
+    <param key="Cp_Ramdump" value="true"/>
+  </item>
+
+  <item name="AutoTest">
+    <param key="unsupport_items" value="TEST_BATCON"/>
+  </item>
+</parameter>

@@ -1,0 +1,15 @@
+service nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service-st
+    class hal
+    user nfc
+    group nfc
+    disabled
+
+#prop setting
+#ro.hardware.nfc, choose st apk in /vendor/st , instead apex
+#ro.vendor.nfc.repair,repair UI
+on boot && property:ro.boot.hwname=sapphiren
+    start nfc_hal_service
+    setprop ro.hardware.nfc ST_NFC
+    setprop ro.vendor.nfc.repair 1
+    setprop ro.vendor.nfc.dispatch_optim 1
+    setprop ro.vendor.nfc.wallet_fusion 1
